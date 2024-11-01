@@ -75,18 +75,6 @@ public class JsonClass : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        if(Input.GetKeyDown(KeyCode.A))
-        {
-            SaveData(UserName, Score);
-        }
-
-        if (Input.GetKeyDown(KeyCode.D))
-        {
-            LoadDataAndSet();
-        }
-    }
 
 
     [Serializable]
