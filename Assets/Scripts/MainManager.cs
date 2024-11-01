@@ -72,5 +72,11 @@ public class MainManager : MonoBehaviour
     {
         m_GameOver = true;
         GameOverText.SetActive(true);
+
+        if (JsonClass.instance.CheckSavedData().score<m_Points)
+        {
+            JsonClass.instance.SaveData(JsonClass.instance.UserName, m_Points);
+        }
+
     }
 }
